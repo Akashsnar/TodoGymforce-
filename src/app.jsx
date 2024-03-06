@@ -42,9 +42,9 @@ export const App = () => {
 
   return (
     <div className="app">
+      <TodoForm todos={todos} setTodos={setTodos} />
       <TodoList todos={todos} setTodos={setTodos} />
       <TodoResults todos={todos} setTodos={setTodos} />
-      <TodoForm todos={todos} setTodos={setTodos} />
     </div>
   );
 };
