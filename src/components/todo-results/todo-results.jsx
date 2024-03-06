@@ -6,6 +6,11 @@ export const TodoResults = (props) => {
 
   const calculateChecked = () => {
     // Function to calculate completed tasks
+    const completedTasks = todos.reduce((acc, todoItem) => {
+      return todoItem.checked ? acc + 1 : acc;
+    }, 0);
+
+    return completedTasks;
   };
 
   return (
